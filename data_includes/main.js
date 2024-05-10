@@ -328,7 +328,7 @@ newTrial("break",
 
 
 // Experimental trial
-Template("items_list1.csv", row =>
+Template("items.csv", row =>
     newTrial("experimental-trial",
     
         newHtml("context", row.context)
