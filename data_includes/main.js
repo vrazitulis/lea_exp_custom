@@ -375,7 +375,6 @@ Template("items_list1.csv", row =>
             hasCorrect: true,
             randomOrder: false
         })
-        
         .center()
         .print()
         .log()
@@ -388,12 +387,13 @@ Template("items_list1.csv", row =>
         .print()
         .wait()
         
-        ,
     )
     .log("item", row.item)
     .log("NP_size", row.NP_size)
     .log("condition", row.condition)
     .log("is_filler", row.is_filler)
+    .log("list", row.list) // Latin-square list; added by Michael (May 10)
+    .log("correct", row.correct) // correct answer; added by Michael (May 10)
     
 );
 
