@@ -180,11 +180,6 @@ newTrial("questionnaire",
         .remove()
         ,
         
-        newTimer("wait", 1)
-        .start()
-        .wait()
-        ,
-        
         newController("DashedSentence", {s : "Longtemps, je_me_suis couché de_bonne_heure"})
         .size(900, 400)
         .center()
@@ -206,13 +201,8 @@ newTrial("questionnaire",
 
         getHtml("context2")
         .remove()
-        ,
-        
-        newTimer("wait", 1)
-        .start()
-        .wait()
-        
-    ,
+     ,
+
      newController("DashedSentence", {s : "Toutes_les_familles_heureuses se_ressemblent, mais chaque_famille_malheureuse l'est à_sa_façon"})
         .size(900, 400)
         .center()
@@ -234,12 +224,7 @@ newTrial("questionnaire",
 
         getHtml("context3")
         .remove()
-        ,
-        
-        newTimer("wait", 1)
-        .start()
-        .wait() 
-    ,
+     ,
      newController("DashedSentence", {s : "Alice, assise_auprès_de_sa_soeur sur_le_gazon, commençait_à_s'ennuyer de_rester_là à_ne_rien_faire"})
         .size(900, 400)
         .center()
@@ -321,11 +306,6 @@ Template("items.csv", row =>
 
         getHtml("context")
         .remove()
-        ,
-        
-        newTimer("wait", 1)
-        .start()
-        .wait()
         ,
         
         newController("DashedSentence", {s : row.sentence})
